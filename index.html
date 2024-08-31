@@ -29,9 +29,7 @@
 
         .flex-container{
             display: flex;
-            background-color: #006A6A;
             justify-content: space-around;
-            padding: 20px;
         }
 
         .header-title{
@@ -49,6 +47,62 @@
         .header-line-3{
             padding-top: 15px;
         }
+
+        .col-1{
+            background-color: #006A6A;
+            color: #Fff;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .col-2{
+            color: #Fff;
+            background-color: #008991;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .block-2-title{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price{
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .month{
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        } 
+
+        .button{
+            width: 100%;
+            padding: 15px 32px;
+
+            color: #006A6A;
+            font-size: 16px;
+            margin-top: 20px;
+
+            border-radius: 4px;
+            border: none;
+
+            background-color: #CCCCCC;
+
+            cursor: pointer;
+        }
+
+        .button:hover{
+            background-color: #E9E9E9;
+        }
+
+        .imgs{
+            padding: 40%;
+        }
+
     </style>
 
 </head>
@@ -68,17 +122,25 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
+            <div class="col-1">
                 <!-- Coluna 1 --> 
-                <p>Assinatura Mensal:</p>
-                <p>R$ 99,00 <em>por mês</em>.</p>
-                <p>Cancele a qualquer momento.</p>
-                <button></button>
+                 <div class="block-2-title">
+                    Assinatura mensal:
+                 </div>
+                <div>
+                    <span class="price">R$ 99,99</span> 
+                    <span class="month">por mês.</span>
+                </div>
+                <div>
+                    Cancele a qualquer momento.
+                </div>
+
+               <button class="button"> Assine Agora</button>
             </div>
-            <div>
+            <div class="col-2">
                 <!-- Coluna 2 -->
-                 <img src="" alt="Icon Group">
-                 <p>Você terá acesso:</p>
+                    <span class="imgs"> <img src="imgs/groups_white_48dp.svg" alt="Icon Group"> </span>
+                 Você terá acesso:
 
                  <ul>
                     <li>Projetos exclusivos</li>
